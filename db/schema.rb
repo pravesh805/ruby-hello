@@ -12,11 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_12_10_194334) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plperl"
-  enable_extension "plperlu"
-  enable_extension "plpgsql"
-
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
